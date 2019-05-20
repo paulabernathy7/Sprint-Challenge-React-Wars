@@ -26,11 +26,18 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a powerful library used for building user interfaces. The problem that react tries to solve is faster dom manipulation. Since web pages change over time at fast rates react uses the virtual dom to update the state. Limiting the number of refreshes. 
+
 - [ ] What does it mean to _think_ in react?
 
+Thinking in react is breaking your UI into a hierarchy of components. Ideally, a component will do one thing. Look at your design file and break up the design into different components. 
+
+
 - [ ] Describe state.
+The state is what makes your app interactive. The state represents the part of the app that can change. You must change the state to change how the app looks. Whevever state changes the component will automatically re-render and update the dom. 
 
 - [ ] Describe props.
+Props are read-only and are how components talk to one another. They do not change, you have to change the state to change how the app looks. 
 
 ## Project Set Up
 

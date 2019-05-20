@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import Characters from "./components/Characters"
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: []
+      // above is our list of starwars characters in an array that we need to map over
     };
   }
 
@@ -30,10 +32,14 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state.starwarsChars)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Characters starwarsChars={this.state.starwarsChars}/>
+        {/* above we're calling our component of starwars characters and we're passing whatever is in our state to that component */}
       </div>
+      
     );
   }
 }
